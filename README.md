@@ -2,14 +2,14 @@
 
 It's just that: Many-to-One example with Express + Sequelize + MySQL
 
-In the file models/index.js you can find the key concept of this example. In this example a ```Shop``` can have many ```Bicycles```, and a ```Bicycle``` can only be in a ```Shop```:
+In the file [models/index.js](backend/models/index.js) you can find the key concept of this example. In this example a ```Shop``` can have many ```Bicycles```, and a ```Bicycle``` can only be in a ```Shop```:
 
 ```
 db.shops.hasMany(db.bicycles, { foreignKey: 'shopId' });
 db.bicycles.belongsTo(db.shops, { foreignKey: 'shopId' });
 ```
 
-It's also interesting to note that adding ````{ include: Shop }```` in line 29 in controllers/bicycle.controller.js shows the following result in the end-point GET http://localhost:8080/api/bicycles
+It's also interesting to note that adding ````{ include: Shop }```` in line 29 in [controllers/bicycle.controller.js](backend/controllers/bicycle.controller.js) shows the following result in the end-point GET http://localhost:8080/api/bicycles
 
 ```
 [
