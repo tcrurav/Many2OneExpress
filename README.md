@@ -104,6 +104,6 @@ https://documenter.getpostman.com/view/3446841/2sAXxJiab6
 * [express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
 * [MySQL Workbench](https://www.mysql.com/products/workbench/) - MySQL Workbench is a unified visual tool for database architects, developers, and DBAs.
 
-## Acknowledgments
+## Acknowledgements
 
 * https://gist.github.com/PurpleBooth/109311bb0361f32d87a2. A very complete template for README.md files.
