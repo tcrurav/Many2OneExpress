@@ -9,6 +9,28 @@ db.shops.hasMany(db.bicycles, { foreignKey: 'shopId' });
 db.bicycles.belongsTo(db.shops, { foreignKey: 'shopId' });
 ```
 
+It's also interesting to note that adding ````{ include: Shop }```` in line 29 in controllers/bicycle.controller.js shows the following result in the end-point GET http://localhost:8080/api/bicycles
+
+```
+[
+    {
+        "id": 1,
+        "brand": "BH",
+        "model": "Sky",
+        "createdAt": "2024-10-02T00:01:21.000Z",
+        "updatedAt": "2024-10-02T00:01:21.000Z",
+        "shopId": 1,
+        "shop": {
+            "id": 1,
+            "name": "Burbujita",
+            "address": "c/ león y castillo, 3",
+            "createdAt": "2024-10-02T00:01:17.000Z",
+            "updatedAt": "2024-10-02T00:01:17.000Z"
+        }
+    }
+]
+```
+
 ## Getting Started
 
 These instructions will give you a copy of the project up and running on
