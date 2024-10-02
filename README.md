@@ -2,6 +2,13 @@
 
 It's just that: Many-to-One example with Express + Sequelize + MySQL
 
+In the file models/index.js you can find the key concept of this example. In this example a ```Shop``` can have many ```Bicycles```, and a ```Bicycle``` can only be in a ```Shop```:
+
+```
+db.shops.hasMany(db.bicycles, { foreignKey: 'shopId' });
+db.bicycles.belongsTo(db.shops, { foreignKey: 'shopId' });
+```
+
 ## Getting Started
 
 These instructions will give you a copy of the project up and running on
