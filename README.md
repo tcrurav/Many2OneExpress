@@ -89,10 +89,12 @@ cd Many2OneExpress/backend
 node index.js
 ```
 
-You can now test the API with the following end-points available here:
-https://documenter.getpostman.com/view/3446841/2sAXxJiab6
-
 Enjoy!!!
+
+## Test it with POSTMAN
+
+Test this example with the following end-points available here:
+https://documenter.getpostman.com/view/3446841/2sAXxJiab6
 
 ## Built With
 
